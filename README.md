@@ -61,6 +61,7 @@ chain = prompt | llm | JsonOutputParser() | RunnablePassthrough.assign(output=in
 which will be used in our LangGraph agent.
 
 The parser role is to provide output as the following one with "role" and "content" keys:
+
 ```
 {'role': 'assistant',
  'content': 'O Bieliku, polskim modelu językowym, w czym może pomóc edukatorom osób dorosłych. Bielik — pierwszy program LLM (Large Language Model) w pełni dostosowany do języka polskiego. Trochę o nim samym i możliwościach wykorzystania. Lidia Mirowska. \n You can find more information at: https://epale.ec.europa.eu/pl/blog/o-bieliku-polskim-modelu-jezykowym-w-czym-moze-pomoc-edukatorom-osob-doroslych'}
