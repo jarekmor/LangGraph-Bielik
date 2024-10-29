@@ -1,6 +1,8 @@
 # LangGraph-Bielik
 Example of LangGraph agent with Tavily Search API tool with Bielik LLM model.
 
+![Alt text](output_image.png "Bielik Agent")
+
 The main goal was to force Bielik model to use tools as it not supports function calling feature natively - llm.bind_tools() doesn't work.
 
 The first step is to define a tool (function) TavilyRunQuery() based on standard Langchain's TavilySearchResults() library.
