@@ -57,7 +57,8 @@ def parse_output(output: Dict) -> Dict:
 and we have a complete chain:
 ```
 chain = prompt | llm | JsonOutputParser() | RunnablePassthrough.assign(output=invoke_tool) | parse_output
-```,
+```
+
 which will be used in our LangGraph agent.
 
 The parser role is to provide output as the following one with "role" and "content" keys:
